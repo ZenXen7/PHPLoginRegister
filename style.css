@@ -55,3 +55,52 @@ body {
 .btn:hover {
     background-color: #0056b3;
 }
+
+.container-oten {
+    max-width: 800px; 
+    margin: 50px auto; 
+    padding: 30px;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+    width: 100%; 
+    border-collapse: collapse; 
+    margin-bottom: 20px; 
+}
+
+
+.table th, .table td {
+    padding: 12px; 
+    border-bottom: 1px solid #ddd; 
+}
+
+.table th {
+    background-color: #007bff; 
+    color: #fff; 
+}
+
+.table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.alert {
+    margin-bottom: 20px;
+    padding: 15px; 
+    border: 1px solid transparent; 
+    border-radius: 5px;
+}
+
+.alert-info {
+    background-color: #d1ecf1; 
+    border-color: #bee5eb;
+    color: #0c5460; 
+}
+
+.alert-danger {
+    background-color: #f8d7da; 
+    border-color: #f5c6cb;
+    color: #721c24; 
+}

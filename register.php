@@ -27,6 +27,7 @@ if(isset($_POST["submit"])){
     $rptPassword = $_POST["repeat_password"];
     $gender = $_POST["gender"];
     $birthdate = $_POST["date"]; 
+
     $passwordHash = password_hash($password, PASSWORD_DEFAULT);
     $errors = array();
 

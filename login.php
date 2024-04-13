@@ -38,7 +38,7 @@
                 $row = mysqli_fetch_assoc($result);
                 if(password_verify($password, $row['password'])){
                     echo "<div class='alert alert-success'>Login successful!</div>";
-                    header("Location: https://www.youtube.com");
+                    header("Location: http://localhost/login-register/schedule.php");
                     
                 } else {
                     echo "<div class='alert alert-danger'>Incorrect password</div>";
