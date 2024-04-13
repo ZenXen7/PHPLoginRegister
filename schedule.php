@@ -1,25 +1,25 @@
 <?php
-session_start(); // Start the session to access session variables
-
-// Check if the user is logged in
+session_start(); 
 
 
-// Include necessary files
-require_once "connect.php"; // Database connection file
 
-// Define an array of random trainer names
+
+
+require_once "connect.php"; 
+
+
 $trainerNames = array("John", "Sarah", "Michael", "Emma", "David", "Sophia", "James", "Olivia", "Daniel", "Ava");
 
-// Handle form submission if any
+
 if(isset($_POST["submit"])){
-    // Retrieve form data
+  
    
-    $trainerName = $_POST["trainer_name"]; // Assuming trainer's name is submitted via form
-    $appointmentDate = $_POST["appointment_date"]; // Assuming appointment date is submitted via form
+    $trainerName = $_POST["trainer_name"]; 
+    $appointmentDate = $_POST["appointment_date"]; 
 
-    // Perform any validation if needed
+   
 
-    // Insert appointment into database
+    
     $sql = "INSERT INTO tblappointment (profileID, trainer_name, appointment_date) VALUES (?, ?, ?)";
     $stmt = mysqli_stmt_init($conn);
     if(mysqli_stmt_prepare($stmt, $sql)){
