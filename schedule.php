@@ -51,7 +51,6 @@ if(isset($_POST["submit"])){
             <div class="form-group">
                 <label for="trainer_name">Select Trainer:</label>
                 <select class="form-select" name="trainer_name" id="trainer_name" required>
-                    <!-- Populate dropdown options with random trainer names -->
                     <?php foreach($trainerNames as $name): ?>
                         <option value="<?php echo $name; ?>"><?php echo $name; ?></option>
                     <?php endforeach; ?>
